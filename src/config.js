@@ -73,14 +73,14 @@ export const GEN = {
   holeEdgeMargin: 3, // notch distance from an island edge
   minSectionWidth: 10,
   maxSectionWidth: 30,
-  weights: { flat: 26, slope: 20, hill: 18, tiers: 12, gap: 11 },
+  weights: { flat: 30, slope: 20, hill: 9, tiers: 12, gap: 11 },
   slope: { minRise: 5, maxRise: 18, maxRatio: 0.7 },
-  hill: { minHeight: 6, maxHeight: 16, samples: 12, valleyChance: 0.35 },
+  hill: { minHeight: 5, maxHeight: 12, samples: 12, valleyChance: 0.35 },
   tiers: { minSteps: 2, maxSteps: 4, minStep: 4, maxStep: 9, minTread: 6 },
   gap: { minWidth: 10, maxWidth: 34, minIslandWidth: 16 },
   sand: { chance: 0.45, inset: 2, minWidth: 6, maxWidth: 16, depth: 2.2 },
   platforms: {
-    countWeights: [40, 35, 25], // odds of 0, 1, 2 platforms
+    countWeights: [12, 30, 38, 20], // odds of 0, 1, 2, 3 platforms
     minWidth: 10,
     maxWidth: 22,
     thickness: 3,
@@ -91,7 +91,7 @@ export const GEN = {
     teeExclusion: 14,
     holeExclusion: 8,
     padding: 6,
-    tries: 12,
+    tries: 20,
   },
   reachSafety: 0.8, // fraction of max shot speed used when checking reachability
   maxAttempts: 50, // regenerations before giving up on a seed
